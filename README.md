@@ -1,5 +1,5 @@
 # news-bot
-![image.png](attachment:2630e72d-fb21-4f0b-a801-4c589c8da8ec:image.png)
+<img width="1179" height="2014" alt="image" src="https://github.com/user-attachments/assets/51843a70-b502-420b-bed8-09330a7d3a6f" />
 # PRD
 # IT·경제 뉴스 자동화 봇 — 제품 요구사항 문서 (PRD)
 
