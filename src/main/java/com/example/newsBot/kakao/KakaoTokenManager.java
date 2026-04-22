@@ -23,6 +23,9 @@ public class KakaoTokenManager {
     @Value("${kakao.client-id}")
     private String clientId;
 
+    @Value("${kakao.client-secret:}")
+    private String clientSecret;
+
     @Value("${kakao.refresh-token}")
     private String refreshToken;
 
@@ -34,6 +37,9 @@ public class KakaoTokenManager {
         body.add("grant_type", "refresh_token");
         body.add("client_id", clientId);
         body.add("refresh_token", refreshToken);
+        if (!clientSecret.isBlank()) {
+            body.add("client_secret", clientSecret);
+        }
 
         ResponseEntity<Map> response = restTemplate.exchange(
                 TOKEN_URL,

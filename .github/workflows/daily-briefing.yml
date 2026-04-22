@@ -43,6 +43,7 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           KAKAO_CLIENT_ID: ${{ secrets.KAKAO_CLIENT_ID }}
+          KAKAO_CLIENT_SECRET: ${{ secrets.KAKAO_CLIENT_SECRET }}
           KAKAO_REFRESH_TOKEN: ${{ secrets.KAKAO_REFRESH_TOKEN }}
           NEWSBOT_DRY_RUN: ${{ github.event.inputs.dry_run || 'false' }}
         run: java -jar build/libs/newsBot-0.0.1-SNAPSHOT.jar
